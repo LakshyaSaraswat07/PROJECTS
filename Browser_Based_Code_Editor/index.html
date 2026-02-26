@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Browser Code Editor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h2>Mini Code Editor</h2>
+  <div class="controls">
+    <button onclick="runCode()">Run ▶</button>
+    <button onclick="clearCode()">Clear 🗑</button>
+    <button onclick="downloadCode()">Download ⬇</button>
+    <button onclick="toggleTheme()">Theme 🌙</button>
+  </div>
+</header>
+
+<div class="editor-container">
+
+  <div class="editor">
+    <label>HTML</label>
+    <textarea id="htmlCode" placeholder="Write HTML here..."></textarea>
+  </div>
+
+  <div class="editor">
+    <label>CSS</label>
+    <textarea id="cssCode" placeholder="Write CSS here..."></textarea>
+  </div>
+
+  <div class="editor">
+    <label>JavaScript</label>
+    <textarea id="jsCode" placeholder="Write JS here..."></textarea>
+  </div>
+
+</div>
+
+<h3>Output</h3>
+<iframe id="output"></iframe>
+
+<script src="script.js"></script>
+</body>
+</html>
